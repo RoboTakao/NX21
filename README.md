@@ -6,3 +6,6 @@
 
 [Cotroll with Dabble and PSD]  
 &emsp;M5AtomS3 sketch : NX21_S3_PSD.ino  
+
+Connection  
+![image](NX21_connection.jpg)
