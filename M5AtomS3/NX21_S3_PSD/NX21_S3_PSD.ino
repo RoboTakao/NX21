@@ -66,10 +66,10 @@ int u_s[6]={-15,-60,15,60};
 int d_s[6]={60,15,-60,-15};
 
 // Right_Down_Step
-int rd_s[6]={70,30,0,0};
+int rd_s[6]={70,30,-30,0};
 
 // Left_Down_Step
-int ld_s[6]={0,0,-70,-30};
+int ld_s[6]={30,0,-70,-30};
 
 int angry_state = 0;
 
@@ -398,13 +398,13 @@ void loop() {
     }
   }
   
-  if(psd()<8)
+  if((psd()<8)&&(position_status == 0))
   {
     back_step();
     back_step();
   }
   
-  if((psd()<15)&&(psd()>10))
+  if(((psd()<15)&&(psd()>10))&&(position_status == 0))
   {
     forward_step();
   }
